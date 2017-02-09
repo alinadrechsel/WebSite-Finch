@@ -93,11 +93,11 @@ Ein Raspberry Pi benötigt ein Betriebsystem, um erfolgreich starten zu können.
 <a href="http://www.berryterminal.com/doku.php/berryboot">http://www.berryterminal.com/doku.php/berryboot</a>
  fest und haben die Version für the original Raspberry Pi, Pi Zero, Pi 2 and Pi 3 (53 MB): berryboot-20161118-pi0-pi1-pi2-pi3.zip auf die SD-Karte geladen, welche währenddessen in einem externen Computer steckte. Danach mussten wir die darin enthaltene Zip-Datei entpacken. Nach  einem erfolgreichen Abschluss mussten wir sicherstellen, dass wir eine Internetverbindung haben, auf die der Raspberry Pi zugreifen kann. Dies lösten wir mit einem vorhandenen Lan-Kabel aus der Schule. Anschließend steckten wir die SD-Karte wieder zurück in den Raspberry Pi und schlossen ebenfalls ein Kabel zur Stromversorgung an. Darauf folgend ist er von selbst hochgefahren, da er keinen Ein- beziehungsweise Ausschaltknopf besitzt und beobachteten ihn beim Booten. Nach einigen Minuten wurde uns dieses Bild auf der Benutzeroberfläche angezeigt.</p>
 
-<p><img src="9fa184c117c17ad4909408e0f6351a1a.media.500x375.png" alt="bsp Raspberry Pi Installation" /></p>
+<p><img src="Bilder/9fa184c117c17ad4909408e0f6351a1a.media.500x375.png" alt="Bilder/9fa184c117c17ad4909408e0f6351a1a.media.500x375.png" style="width:420px;height:420px;border:0;"></p>
 
 <p>Nun waren wir aufgefordert, die empfohlene Linux-Distribution Debian basierend auf Raspbian auszuwählen, welche sich bereits auf der beschriebenen SD-Karte befindet. Die Installation nahm einen langen Zeitraum in Anspruch und wir drehten für wenige Stunden unsere Däume. Währenddessen wurde uns der Fortschritt des Installationsprozesses angezeigt.</p>
 
-<p><img src="f573902075c44e29bcfd376383f1ea35.media.500x375.png" alt="bsp Raspberry Pi Installation" /></p>
+<p><img src="Bilder/9fa184c117c17ad4909408e0f6351a1a.media.500x375.png" alt="Bilder/9fa184c117c17ad4909408e0f6351a1a.media.500x375.png" style="width:420px;height:420px;border:0;"></p>
 
 <h6 id="exkurs">Exkurs</h6>
 
@@ -108,7 +108,7 @@ Ein Raspberry Pi benötigt ein Betriebsystem, um erfolgreich starten zu können.
   Raspberry-Pi-Modelle.</p>
 </blockquote>
 
-<p><img src="hintergundpi.jpeg" alt="bsp Raspberry Pi Installation" /></p>
+<p><img src="Bilder/hintergundpi.jpeg" alt="Bilder/hintergundpi.jpeg" style="width:420px;height:420px;border:0;"></p>
 
 <p>Nach der erfolgreichen Installation ist es notwendig, den Raspberry Pi neu zu starten, um weitere grundlegende Konfigurationen vorzunehmen. Dazu gehören die Konfiguration der Sprache, Zeichensatz, Zeitzone und ein deutsches Tastatur-Layout. Nun war die Grundkonfiguration endlich fertig. Für die Konfiguration von Raspbian existiert ein Konfigurations-Tool unter "Preferences > Raspberry Pi Configuration". Damit haben wir die wichtigen Dinge schnell einstellen können, ohne dass wir komplizierte Kommandos im Terminal eingeben mussten. Anschließend starteten wir den Raspberry Pi erneut.</p>
 
@@ -117,7 +117,7 @@ Ein Raspberry Pi benötigt ein Betriebsystem, um erfolgreich starten zu können.
 <p>Der erste Schritt war gemeistert. 
 Wir gaben den Befehl „ifconfig“ im Terminal ein, um zu schauen, ob unser USB-Wireless-Adapter im System erkannt wurde. ifconfig steht für „interface configurator“ und zeigt einem die IP-Netzwekschnittstellen an. Da uns die Schnittstelle „wlan0“ angezeigt wurde, sind wir davon ausgegangen, dass unser Raspberry Pi nun über den USB-Wireless-Adapter eine Internetverbindung besitzt. </p>
 
-<p><img src="IMG_7707.jpg" alt="bsp Terminal wlan0 Raspberry Pi " /></p>
+<p><img src="Bilder/IMG_7707.jpg" alt="Bilder/IMG_7707.jpg" style="width:420px;height:420px;border:0;"></p>
 
 <p>www.google.de? Fehlanzeige! Der USB-Wireless-Adpater kommuniziert nicht mit dem Schulnetzwerk. Das bedeutet, wir haben keine aktive Internetverbindung. Der Adapter wird vom System erkannt, wird aber nicht in das bestehende Netzwerk eingebunden. Ahnungslosigkeit herrschte in unseren Köpfen. Wie bekommen wir es hin, dass der Raspberry Pi endlich eine Internetverbindung bekommt. Anfangs wurden wir durch das internet nicht schlauer, da wir leider nicht genau wussten, wonach wir suchen sollten. Aus diesem Grund fragten wir Herrn Buhl um Hilfe.
 Er löste unser Problem, indem er in der Datei „/etc/wpa<em>supplicant/wpa</em>supplicant.conf“ eine Änderung vornahm. </p>
@@ -140,11 +140,11 @@ Da uns nun die IP-Adresse bekannt war, konnten wir Putty unter Windows öffnen u
 
 <p>Folgend darauf mussten wir eine Konfiguration für FinchRobot durchführen. Dazu mussten wir und sie Birdbrain Technologies Software für den Raspberry pi auf einem host-Computer herunterladen und diese Datei n das Verzeichnis des Raspberry Pi kopieren. Danach mussten wir im Terminal in ~ / BBTechSoftwareForPi wechseln und weitere Kommandos eingeben (siehe Bild)</p>
 
-<p><img src="InitialConfig.png" alt="bsp  BBTechSoftwareForPi" /></p>
+<p><img src="Bilder/InitialConfig.png" alt="Bilder/InitialConfig.png" style="width:420px;height:420px;border:0;"></p>
 
 <p>Endlich waren wir beim aller letzten Schritt angekommen. Es war eine lange, aufregende und wissenswerte Zeit bis dahin. Wir haben sehr viel über den Raspberry Pi gelernt. Der letzte Schritt war die Installation eines Servers, mit dem wir FinchRobot mit der Snap! Programmierumgebung von einem entfernten Computer aus steuern können. Dazu mussten wir den Server auf dem rad-berry Pi starten, indem wir zum Verzeichnis „FinchServer“ im Ordner „BBTechSoftwareforPi“ den Befehl "java -jar FinchServer.jar" eingegeben haben.</p>
 
-<p><img src="FinchSnapServer.png" alt="bsp  FinchServer" /></p>
+<p><img src="Bilder/FinchSnapServer.png" alt="Bilder/FinchSnapServer.png" style="width:420px;height:420px;border:0;"></p>
 
 <p>Anschließend mussten wir nur noch die reguläre Seite von Snap! auf einem Computer mit dem gleichen lokalen Netzwerk wie der Raspberry Pi öffnen (http://snap.berkeley.edu/snapsource/snap.html). Der aller letzte Schritt erfolgte mit dem Import einer Datei <a href="https://dl.dropboxusercontent.com/u/9303915/FinchPiSnapBlocks.xml">https://dl.dropboxusercontent.com/u/9303915/FinchPiSnapBlocks.xml</a>. Diese Datei zogen wir in Snap! und änderten folgend die IP-Adresse im „set“-Block.</p>
 
