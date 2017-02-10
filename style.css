@@ -1,0 +1,87 @@
+	margin: 0 auto;
+}
+
+/*
+Sollte sich selber erklären
+*/
+#header {
+	width: 980px;
+	height: 100px;
+	padding-top: 50px
+}
+/*
+Diese Werte gelten für h1 NUR im header
+*/
+#header h1 {
+	padding-top: 10px
+	font-size: 25px;
+	font-weight: normal;
+	color:black;
+	font-family:'coolvetica', arial, helvetica, serif;
+}
+/*
+Mainbereich angepasst (Breite, Hintergrund, Abgerundete Ecken, Schriftart und Größe)
+*/
+#main {
+	width: 980px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	font-size: 14px;
+}
+/*
+Breite auf 800px festgelegt (schmaler als der eingefärbte Bereich)
+mit margin: 0 auto festgelegt dass der Bereich mittig plaziert werden soll
+margin-top definiert den Leerraum nach Oben / margin-bottom entsprechend nach unten 
+*/
+#menu {
+	margin: 0 auto;
+	width:800px;
+	margin-top:50px;
+	margin-bottom:10px;
+}
+/*
+Breite auf 800px festgelegt (schmaler als der eingefärbte Bereich)
+mit margin: 0 auto festgelegt dass der Bereich mittig plaziert werden soll
+text-align: justify = Blocktext
+*/
+#content {
+	margin: 0 auto;
+	width: 800px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+/*
+Footer geht wieder über die ganze Breite (980px)
+*/
+#footer {
+	width: 980px;
+	height: 50px;
+	margin-top:50px;
+	margin-bottom:50px;
+
+}
+/*
+h1 bis h4 im Bereich main "definiert"
+color: black könnte man auch raus lassen, ist für die Vollständigkeit angenehmer
+*/
+#main h1 { font-size: 25px; color: black; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+#main h2 { font-size: 22px; color: black; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+#main h3 { font-size: 20px; color: black; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+#main h4 { font-size: 18px; color: black; font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+/*
+p im Inhaltsverzeichnis angepasst
+*/
+#menu p {
+	line-height: 30px;
+	font-size: 16px;
+}
+/*
+p im Content angepasst
+*/
+#content p {
+	line-height: 22px;
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
