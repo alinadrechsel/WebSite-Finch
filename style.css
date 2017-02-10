@@ -65,7 +65,7 @@ margin-top definiert den Leerraum nach Oben / margin-bottom entsprechend nach un
 #menu {
 	margin: 0 auto;
 	width:800px;
-	margin-top:50px;
+	margin-top:25px;
 	margin-bottom:10px;
 }
 /*
